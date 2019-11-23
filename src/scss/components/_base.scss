@@ -1,0 +1,70 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+	font-weight: $global-font-weight;
+	line-height: $global-line-height;
+	color: $global-color;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+a, .link {
+	text-decoration: none;
+	color: #515f67;
+}
+
+a:hover, .link:hover {
+	text-decoration: underline;
+} 
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+p, ul, ol, figure {
+	margin: 0;
+}
+
+* + p, * + ul, * + ol, * + figure {
+	margin-top: 0;	
+}
+
+ul > li > ol,
+ul > li > ul,
+ol > li > ol,
+ol > li > ul {
+	margin: 0;
+	padding-left: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6  {
+	margin-top: 0;	
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.title {
+  padding-bottom: 40px;
+  &::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+}

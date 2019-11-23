@@ -1,0 +1,18 @@
+.form-group {
+	& .textarea {
+		resize: none;
+		height: 220px;
+		background-color: transparent;
+		&:focus {
+			background-color: $global-color;
+		}
+	}
+}
+
+.input {
+	height: 60px;
+	background-color: transparent;
+	&:focus {
+		background-color: $global-color;
+	}
+}

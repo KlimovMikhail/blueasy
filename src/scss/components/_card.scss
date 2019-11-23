@@ -1,0 +1,29 @@
+.card {
+  border: none;
+  &-body  {
+    padding: 0;
+  }
+}
+
+@media(max-width: 576px) {
+  .card-service {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    & .card-body {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media(min-width: 576px) {
+  .card-service {
+    padding-bottom: 20px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .card-service {
+    padding-bottom: 0px;
+  }
+}

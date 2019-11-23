@@ -1,0 +1,35 @@
+.nav-link {
+  padding: 0 10px;
+}
+
+.nav-item:last-child::after {
+  display: none;
+}
+
+.nav-social {
+  padding-bottom: 20px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.navbar-button .navbar-toggler {
+  border-color: #4bcaff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+@media(min-width: 576px) {
+  .nav-item::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background-color: #515f67;
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+}
