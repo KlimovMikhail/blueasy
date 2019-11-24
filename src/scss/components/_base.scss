@@ -59,12 +59,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  padding-bottom: 40px;
-  &::after {
+  &-white::after {
     content: '';
     display: block;
     width: 45px;
     height: 2px;
     background-color: #ffffff;
+	}
+	&-black::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #515f67;
   }
 }
+
+

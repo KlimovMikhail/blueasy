@@ -3,7 +3,28 @@
   &-body  {
     padding: 0;
   }
+  &-portfolio {
+    opacity: 0.8;
+  }
+  &-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
 }
+
+.card-hover {
+  display: none;
+  background-color: #464f57;
+  opacity: 0.8;
+  font-size: 64px;
+  @include position
+}
+
+.card-portfolio:hover .card-hover { 
+  display: flex; 
+}
+
 
 @media(max-width: 576px) {
   .card-service {

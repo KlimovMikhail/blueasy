@@ -2,24 +2,70 @@
   padding: 80px 10px;
   z-index: 0;
   &-background {
-    background-color: #353f47;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    @include position;
+    z-index: -3;
+  }
+  &-top {
+    margin-bottom: 40px;
+  }  
+  
+  &-overlay {
+    @include position;
+    opacity: 0.9;
     z-index: -2;
   }
+  &-overlay > img,
   &-background > img {
     object-fit: cover;
     height: 100%;
-    width: 100%;
   }
-  &-service {
+  &-hero-title {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 75px;
+    padding: 247px 0;
+    & .back {
+      padding: 0 18px;
+      background-color: #4c565e;
+    }
+  }
+  &-hero {
+    padding: 0;
+  }
+  &-service,
+  &-twitter {
     background-color: #4bcaff;
   }
+  &-portfolio .title {
+    color: #515f67;
+  }
+
   &-just {
     background-color: #515f67;
   }
+  &-twitter-desc {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 50px;
+  }
+  &-test .quotes {
+    font-family: 'Bitter', serif;
+    color: #515f67;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 50px;
+    }
+  &-test .title {
+    color: #515f67;
+  }
+  &-test-desc {
+    color: #515f67;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 50px;
+  }
+  &-john,
+  &-contact,
   &-footer {
     background-color: #353f47;
   }

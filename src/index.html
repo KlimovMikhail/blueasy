@@ -6,20 +6,74 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>blueasy</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
 
+		<section class="section section-hero position-relative">
+			<section class="section-background position-absolute">
+				<img src="images/hero_photo.png" alt="image">
+			</section>
+			<section class="section-overlay position-absolute">
+				<img src="images/overlay_hero.png" alt="image">
+			</section>
+			<section class="section-foreground position-relative">
+				<header class="header position-relative">
+					<div class="header-background position-absolute">
+						<img src="images/bg_header.png" alt="image">
+					</div>
+					<div class="header-content">
+						<div class="container d-flex justify-content-between align-items-center">
+							<a class="logo" href="#">
+									<img src="images/logo_blueasy.png" alt="image">
+								</a>
+								<nav class="navbar navbar-expand-md navbar-light flex-row-reverse">
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+										<ul class="navbar-nav nav text-uppercase">
+											<li class="nav-item  text-right">
+												<a class="nav-link " href="#">Home</a>
+											</li>
+											<li class="nav-item text-right">
+												<a class="nav-link" href="#">Services</a>
+											</li>
+											<li class="nav-item text-right">
+												<a class="nav-link" href="#">features</a>
+											</li>
+											<li class="nav-item text-right">
+													<a class="nav-link" href="#">Portfolio</a>
+											</li>   
+											<li class="nav-item text-right">
+												<a class="nav-link" href="#">Contact</a>
+											</li>        
+										</ul>
+									</div>
+								</nav>
+							</div>
+					</div>
+				</header>
+				<div class="container">
+					<div class="section-hero-title text-uppercase d-flex flex-wrap justify-content-center">						
+						<p class="back mb-2">“I’m looking for the unexpected.</p> 
+						<p class="back">I’m looking for things I’ve never seen before.”</p> 
+					</div>
+				</div>
+			</section>
+		</section>
+
 		<section class="section section-service">
 			<div class="container">
-				<h2 class="title text-uppercase text-left">Services</h2>		
+				<h2 class="title title-white text-uppercase text-left">Services</h2>		
 				<div class="row">
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
 						<div class="card card-service bg-transparent">
 							<span class="icon-service icon-coffeecup"></span>
 							<div class="card-body">
-								<h5 class="card-title">Coffee</h5>
+								<h5 class="card-title text-uppercase">Coffee</h5>
 								<p class="card-text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
 								</p>
 							</div>
@@ -29,7 +83,7 @@
 						<div class="card card-service bg-transparent">
 							<span class="icon-service icon-instant"></span>
 							<div class="card-body">
-								<h5 class="card-title">Coffee</h5>
+								<h5 class="card-title text-uppercase">Instant</h5>
 								<p class="card-text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
 								</p>
 							</div>
@@ -39,7 +93,7 @@
 						<div class="card card-service bg-transparent">
 							<span class="icon-service icon-dslr"></span>
 							<div class="card-body">
-								<h5 class="card-title">Coffee</h5>
+								<h5 class="card-title text-uppercase">Serious</h5>
 								<p class="card-text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
 								</p>
 							</div>
@@ -49,7 +103,7 @@
 						<div class="card card-service bg-transparent">
 							<span class="icon-service icon-frame"></span>
 							<div class="card-body">
-								<h5 class="card-title">Coffee</h5>
+								<h5 class="card-title text-uppercase">frame</h5>
 								<p class="card-text">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
 								</p>
 							</div>
@@ -57,6 +111,93 @@
 					</div>
 				</div>
 			</div>    
+		</section>
+
+		<section class="section section-portfolio">
+			<div class="section-top">
+				<div class="container d-flex justify-content-between align-items-center">					
+					<h2 class="title title-black text-uppercase text-left">Portfolio</h2>		
+					<nav class="navbar navbar-expand-sm navbar-light flex-row-reverse">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+							<ul class="navbar-nav nav nav-portfolio text-uppercase">
+								<li class="nav-item active text-right">
+									<a class="nav-link active" href="#">all</a>
+								</li>
+								<li class="nav-item text-right">
+									<a class="nav-link" href="#">panoramas</a>
+								</li>
+								<li class="nav-item text-right">
+									<a class="nav-link" href="#">portraits</a>
+								</li>
+								<li class="nav-item text-right">
+										<a class="nav-link" href="#">macro</a>
+								</li>   
+								<li class="nav-item text-right">
+									<a class="nav-link" href="#">journal</a>
+								</li>        
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="section-portfolio-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_1.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_2.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_3.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_4.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_5.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_6.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_7.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-3 mb-3 mt-3">
+							<div class="card card-portfolio position-relative">							
+								<img class="card-image" src="images/portfolio/_portfolio_photo_8.png" alt="image">
+								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="section section-just">
@@ -79,12 +220,23 @@
 			</div>    
 		</section>
 
+		<section class="section section-twitter">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<h2 class="title title-white text-uppercase text-left">Twitter</h2>
+					<a href="#"><span class="icon-twitter"></span></a> 	
+				</div>
+				<p class="section-twitter-desc">Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake</p> 
+				<p class="section-twitter-desc"><a class="font-weight-bold text-white" href="#">@cheesecake</a> tootsie roll.</p>
+			</div>    
+		</section>
+
 		<section class="section section-john position-relative">
 			<section class="section-background position-absolute">
 				<img src="images/_bg_photo.png" alt="image">
 			</section>
 			<div class="container">
-				<h2 class="title text-uppercase text-left">Who is john doe?</h2>		
+				<h2 class="title title-white text-uppercase text-left">Who is john doe?</h2>		
 				<div class="row">
 					<div class="col-12 col-lg-6">
 						<div class="card bg-transparent">
@@ -142,12 +294,23 @@
 			</div>    
 		</section>
 
+		<section class="section section-test">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<h2 class="title title-black text-uppercase text-left">Testimonials</h2>
+					<span class="quotes">"</span>	
+				</div>
+				<p class="section-test-desc">Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.
+				</p> 
+			</div>    
+		</section>
+
 		<section class="section section-contact position-relative">
 			<section class="section-background position-absolute">
 					<img src="images/bg_contact.png" alt="image">
 				</section>
 			<div class="container">
-				<h2 class="title text-uppercase text-left">Contact</h2>		
+				<h2 class="title title-white text-uppercase text-left">Contact</h2>		
 				<div class="row">
 					<div class="col-12 col-md-6">
 						<form>
@@ -191,16 +354,16 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item position-relative">
-								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+								<a class="nav-link text-uppercase" href="#">Home <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item position-relative">
-								<a class="nav-link" href="#">services</a>
+								<a class="nav-link text-uppercase" href="#">services</a>
 							</li>
 							<li class="nav-item position-relative">
-								<a class="nav-link" href="#">portfolio</a>
+								<a class="nav-link text-uppercase" href="#">portfolio</a>
 							</li>
 							<li class="nav-item position-relative">
-								<a class="nav-link" href="#">contact</a>
+								<a class="nav-link text-uppercase" href="#">contact</a>
 							</li>
 						</ul>
 					</div>

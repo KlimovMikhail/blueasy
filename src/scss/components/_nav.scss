@@ -1,9 +1,31 @@
+.navbar-expand-md .nav .nav-link {
+  padding: 10px 20px;
+  opacity: 0.9;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  &:hover {
+    border: 1px solid #4bcaff;
+    color: #4bcaff;
+  }
+}
+
 .nav-link {
   padding: 0 10px;
 }
 
 .nav-item:last-child::after {
   display: none;
+}
+
+.nav-portfolio .nav-link {
+  color: #515f67;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;;
 }
 
 .nav-social {
@@ -17,12 +39,12 @@
   border-color: #4bcaff;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-button .navbar-nav .nav-link {
   color: #ffffff;
 }
 
 @media(min-width: 576px) {
-  .nav-item::after {
+  .section-footer .nav-item::after {
     content: '';
     display: inline-block;
     width: 3px;
