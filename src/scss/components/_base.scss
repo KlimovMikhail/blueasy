@@ -21,11 +21,13 @@ a, .link {
 }
 
 a:hover, .link:hover {
-	text-decoration: underline;
+	text-decoration: none;
 } 
 
 img {
 	width: 100%;
+	height: auto;
+	display: block;
 	object-fit: cover;
 }
 
@@ -76,3 +78,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.3);
+	position:fixed;
+	z-index:3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+  height: auto;
+}
+
+.popup_img {
+	position: fixed;
+	z-index:4;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 500px;
+	max-width: 500px;
+}
+
+.popup_img {
+  pointer-events: none;
+}

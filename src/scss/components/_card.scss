@@ -18,13 +18,20 @@
   background-color: #464f57;
   opacity: 0.8;
   font-size: 64px;
-  @include position
+  cursor: pointer;
+  @include position;
 }
 
-.card-portfolio:hover .card-hover { 
-  display: flex; 
+.image:hover { 
+  background-color: #464f57;
+  cursor:zoom-in;
 }
 
+
+.card-portfolio-all img {
+  max-height: 270px;
+  opacity: 0.8;
+}
 
 @media(max-width: 576px) {
   .card-service {

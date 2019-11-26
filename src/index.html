@@ -30,11 +30,11 @@
 									<img src="images/logo_blueasy.png" alt="image">
 								</a>
 								<nav class="navbar navbar-expand-md navbar-light flex-row-reverse">
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 										<span class="navbar-toggler-icon"></span>
 									</button>
-									<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-										<ul class="navbar-nav nav text-uppercase">
+									<div class="collapse navbar-collapse" id="navbarToggler">
+										<ul class="navbar-nav nav-header text-uppercase">
 											<li class="nav-item  text-right">
 												<a class="nav-link " href="#">Home</a>
 											</li>
@@ -117,84 +117,280 @@
 
 		<section class="section section-portfolio">
 			<div class="section-top">
-				<div class="container d-flex justify-content-between align-items-center">					
+				<div class="container d-md-flex justify-content-between align-items-center">
 					<h2 class="title title-black text-uppercase text-left">Portfolio</h2>		
-					<nav class="navbar navbar-expand-md navbar-light flex-row-reverse">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-							<ul class="navbar-nav nav nav-portfolio text-uppercase">
-								<li class="nav-item active text-right">
-									<a class="nav-link active" href="#">all</a>
-								</li>
-								<li class="nav-item text-right">
-									<a class="nav-link" href="#">panoramas</a>
-								</li>
-								<li class="nav-item text-right">
-									<a class="nav-link" href="#">portraits</a>
-								</li>
-								<li class="nav-item text-right">
-										<a class="nav-link" href="#">macro</a>
-								</li>   
-								<li class="nav-item text-right">
-									<a class="nav-link" href="#">journal</a>
-								</li>        
-							</ul>
+					<nav>
+						<div class="nav nav-tabs nav-portfolio border-0 text-uppercase" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active text-right" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
+							<a class="nav-item nav-link text-right" id="nav-panoramas-tab" data-toggle="tab" href="#nav-panoramas" role="tab" aria-controls="nav-panoramas" aria-selected="false">Panoramas</a>
+							<a class="nav-item nav-link text-right" id="nav-portraits-tab" data-toggle="tab" href="#nav-portraits" role="tab" aria-controls="nav-portraits" aria-selected="false">portraits</a>
+							<a class="nav-item nav-link text-right" id="nav-macro-tab" data-toggle="tab" href="#nav-macro" role="tab" aria-controls="nav-macro" aria-selected="false">macro</a>
+							<a class="nav-item nav-link text-right" id="nav-journal-tab" data-toggle="tab" href="#nav-journal" role="tab" aria-controls="nav-journal" aria-selected="false">journal</a>
 						</div>
 					</nav>
 				</div>
 			</div>
 			<div class="section-portfolio-content">
 				<div class="container">
-					<div class="row">
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_1.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+							<div class="row card-portfolio-all">
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">			
+										<img class="card-image image" src="images/portfolio/portfolio_photo_1.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_4.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_5.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_6.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_5.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_6.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_7.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image image" src="images/portfolio/portfolio_photo_4.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
 							</div>
 						</div>
-
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_2.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+						<div class="tab-pane fade" id="nav-panoramas" role="tabpanel" aria-labelledby="nav-panoramas-tab">
+							<div class="row card-portfolio-panorams">
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_1.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_2.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_3.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_4.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_5.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_6.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_7.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-4 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_8.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_3.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+						<div class="tab-pane fade" id="nav-portraits" role="tabpanel" aria-labelledby="nav-portraits-tab">
+							<div class="row card-portfolio-portraits justify-content-center">
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_1.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_2.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_3.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_4.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_5.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_6.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_7.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-8 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_8.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_4.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+						<div class="tab-pane fade" id="nav-macro" role="tabpanel" aria-labelledby="nav-macro-tab">
+							<div class="row card-portfolio-macro justify-content-center">
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_1.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_2.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_3.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_4.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_5.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_6.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_7.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
+								<div class="col-6 col-lg-10 mb-3 mt-3">
+									<div class="card card-portfolio position-relative">							
+										<img class="card-image" src="images/portfolio/portfolio_photo_8.png" alt="image">
+										<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_5.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+						<div class="tab-pane fade" id="nav-journal" role="tabpanel" aria-labelledby="nav-journal-tab">
+							<div class="row card-portfolio-journal">
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_1.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
 							</div>
-						</div>
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_6.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_2.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
 							</div>
-						</div>
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_7.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_3.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
 							</div>
-						</div>
-						<div class="col-6 col-lg-3 mb-3 mt-3">
-							<div class="card card-portfolio position-relative">							
-								<img class="card-image" src="images/portfolio/portfolio_photo_8.png" alt="image">
-								<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_4.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_5.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_6.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_7.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-3 mb-3 mt-3">
+								<div class="card card-portfolio position-relative">							
+									<img class="card-image" src="images/portfolio/portfolio_photo_8.png" alt="image">
+									<div class="card-hover position-absolute justify-content-center align-items-center">+</div>
+								</div>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -387,5 +583,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+	<script src="js/main.js"></script>
 </body>
 </html>

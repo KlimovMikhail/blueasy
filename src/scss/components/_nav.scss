@@ -1,14 +1,9 @@
-.navbar-expand-md .nav .nav-link {
-  padding: 10px 20px;
-  opacity: 0.9;
-  color: #ffffff;
-  font-family: "Segoe UI";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
+.navbar-expand-md .nav-header .nav-link {
+  @include nav($color: #ffffff);
+  padding: 6px 16px;
+  border: 2px solid transparent;
   &:hover {
-    border: 1px solid #4bcaff;
+    border: 2px solid #4bcaff;
     color: #4bcaff;
   }
 }
@@ -22,10 +17,23 @@
 }
 
 .nav-portfolio .nav-link {
-  color: #515f67;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;;
+  @include nav ($color: #515f67);
+  border: 2px solid transparent;
+  padding: 6px 16px;
+  &:hover {
+    border: 2px solid #4bcaff;
+    color: #4bcaff;
+  }
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #4bcaff;
+}
+
+
+.nav-tabs .nav-link {
+  border: 2px solid transparent;
+  border-radius: 0;
 }
 
 .nav-social {
@@ -43,7 +51,7 @@
   color: #515f67;
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .section-footer .nav-item::after {
     content: '';
     display: inline-block;
